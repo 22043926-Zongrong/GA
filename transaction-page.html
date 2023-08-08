@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        I declare that this code was written by me. 
+ I will not copy or allow others to copy my code. 
+ I understand that copying code is considered as plagiarism.
+ 
+ Student Name: Ng Zongrong
+ Student ID: 22043926
+ Class: C369-2D-E63C-A
+ Date/Time Last modified: 07/08/2023 11:00AM
+ 
+    -->
+<head>
+  <script src="https://www.paypal.com/sdk/js?client-id=AdvTRAtMMImpqPOMtNzHi4KDxhCAtOr8eHUwHWxD4hTXXbUxsj8QiBlz5vS0dem3Vk-vL-hWMSztfLU5"></script>
+  <title>Transaction Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a class="logo" href="index.html"><img src="logo.jpeg" alt="logo" width="200"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li id="loginLink"><a href="login.html">Login</a></li>
+        <li id="logoutLink" style="display:none;"><a href="#">Logout</a></li> 
+      </ul>
+    </nav>
+    <h1>Payment Form</h1>
+  </header>
+  
+  <div class="container">
+    <h2>Payment Details</h2>
+    <form id="paymentForm">
+      <label for="cardNumber">Card Number:</label>
+      <div class="cardNum">
+        <input type="text" id="cardNumber" required>
+        <div class="card-icons">
+            <img src="visa.png" width="50px" alt="Visa Card" id="visaIcon">
+            <img src="master-card.png" alt="MasterCard" id="mastercardIcon">
+        </div>
+      </div>
+      
+      <label for="expirationDate">Expiration Date:</label>
+      <input type="text" id="expirationDate" required>
+      
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" required>
+
+      <h2>Transaction Total Payment</h2>
+        <p id="totalPayment"></p>
+      
+      <button type="submit">Pay Now</button>
+      <p id="paypal-button-container"></p>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Payment Status</h2>
+    <p id="paymentStatus"></p>
+  </div>
+
+  <script src="script-transaction.js"></script>
+</body>
+</html>

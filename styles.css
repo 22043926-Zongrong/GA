@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3A8378;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-homepage{
+  z-index: 100;
+  display: flex;
+  height: 87vh;
+  padding: 0px 5%;
+  background-color: #3A8378;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-homepage{
+  margin-bottom: 300px;
+}
+
+.title{
+  font-size: 50px;
+}
+
+.sub-title{
+  color: white;
+  font-size: 25px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover:not(.logo) {
+  background-color: black;
+  color: white;
+}
+
+.logo{
+  margin-right: 20px;
+}
+
+.services {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.services li h3 {
+  margin: 0;
+}
+
+.purchase-btn {
+  background-color: #3a8378;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #3a8378;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.card-icons img {
+    height: 30px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.cardNum{
+  display: flex;
+  align-items: center;
+}
