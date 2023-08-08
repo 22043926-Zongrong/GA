@@ -20,8 +20,8 @@ loginForm.addEventListener("submit", function (event) {
     // Save login status to storage cookies
     localStorage.setItem("isLoggedIn", true);
 
-    // Redirect to transaction-page.html
-    window.location.href = "transaction-page.html";
+    // Redirect to index.html
+    window.location.href = "index.html";
   } else {
     alert("Invalid email or password. Please try again.");
   }
